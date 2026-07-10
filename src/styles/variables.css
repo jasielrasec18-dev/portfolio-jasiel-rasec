@@ -1,0 +1,29 @@
+:root {
+  /* Tipografia */
+  --font-display: 'Orbitron', 'Montserrat', 'Arial', sans-serif;
+  --font-principal: 'Space Grotesk', 'Arial', sans-serif;
+
+  /* Paleta - tema dev / neon escuro */
+  --color-bg: #000000;
+  --color-bg-elevated: rgba(10, 10, 20, 0.95);
+  --color-text: #f2f2f2;
+  --color-text-muted: #b3b3b8;
+  --color-text-soft: #c7c7d1;
+
+  --color-cyan: #00ffea;
+  --color-magenta: #ff2efc;
+  --color-purple: #cc66ff;
+  --color-purple-strong: #b84dff;
+
+  --gradient-accent: linear-gradient(90deg, var(--color-cyan), var(--color-magenta));
+  --gradient-btn: linear-gradient(90deg, var(--color-purple-strong), #6f00ff);
+
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-purple: rgba(204, 102, 255, 0.25);
+
+  --radius-lg: 24px;
+  --radius-md: 16px;
+  --radius-sm: 8px;
+
+  --max-width: 1360px;
+}

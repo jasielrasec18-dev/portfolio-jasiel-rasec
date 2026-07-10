@@ -1,0 +1,64 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-principal);
+  color: var(--color-text-soft);
+  background-color: var(--color-bg);
+}
+
+main {
+  padding: 2.5rem 0;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.highlight-mim {
+  color: var(--color-text);
+  text-shadow: 0 0 12px var(--color-text);
+}
+
+.section-title {
+  position: relative;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-family: var(--font-display);
+  letter-spacing: 0.08em;
+  color: var(--color-text);
+  text-shadow: 0 0 12px var(--color-text);
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -1.1rem;
+  transform: translateX(-50%);
+  width: 5rem;
+  height: 3px;
+  border-radius: 999px;
+  background: var(--gradient-accent);
+}
+
+.section-title .bracket {
+  color: var(--color-purple);
+  text-shadow: 0 0 8px var(--color-purple);
+}
+
+/* Visible keyboard focus, always */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--color-cyan);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+@media (max-width: 1090px) {
+  main {
+    padding: 0.65rem;
+  }
+}

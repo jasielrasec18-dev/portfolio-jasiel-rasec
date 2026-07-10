@@ -1,0 +1,157 @@
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  background: var(--color-bg);
+  color: #fff;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.hero-intro {
+  color: var(--color-cyan);
+  letter-spacing: 0.2em;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-title {
+  font-family: var(--font-display);
+  font-size: 4.5rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  margin-bottom: 0.5rem;
+  color: #fff;
+  text-shadow: 0 0 20px var(--color-magenta), 0 0 40px var(--color-magenta), 0 0 60px var(--color-purple), 0 0 80px var(--color-purple);
+}
+
+.hero-title .neon {
+  color: var(--color-purple);
+  text-shadow: 0 0 20px var(--color-purple), 0 0 40px var(--color-purple), 0 0 60px var(--color-purple);
+}
+
+.hero-role {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.hero-role .highlight {
+  color: var(--color-cyan);
+}
+
+.hero-desc {
+  font-size: 1rem;
+  color: var(--color-text-muted);
+  margin-bottom: 2rem;
+  max-width: 600px;
+}
+
+.hero-btn {
+  background: #18181b;
+  color: var(--color-magenta);
+  border: 1.5px solid var(--color-magenta);
+  border-radius: var(--radius-sm);
+  padding: 0.7rem 2.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(255, 46, 252, 0.27);
+  transition: background 0.2s, color 0.2s;
+  margin-bottom: 3rem;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.hero-btn:hover {
+  background: var(--color-magenta);
+  color: #18181b;
+}
+
+.hero-socials {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.hero-socials a {
+  z-index: 1001;
+}
+
+.hero-socials a img {
+  width: 2.2rem;
+  height: 2.2rem;
+  display: block;
+  background: #fff;
+  border-radius: 50%;
+  padding: 0.3rem;
+  box-shadow: 0 0 8px rgba(255, 46, 252, 0.27);
+  transition: filter 0.2s, transform 0.2s, background 0.2s;
+}
+
+.hero-socials a:hover img {
+  background: var(--color-magenta);
+  filter: drop-shadow(0 0 8px var(--color-magenta)) brightness(1.2);
+  transform: scale(1.12) rotate(-6deg);
+}
+
+.hero-mouse {
+  margin-top: 4rem;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 85vh;
+    padding: 2rem 1rem;
+  }
+
+  .hero-title {
+    font-size: 2.25rem;
+  }
+
+  .hero-intro {
+    font-size: 0.95rem;
+  }
+
+  .hero-role {
+    font-size: 1.1rem;
+  }
+
+  .hero-desc {
+    font-size: 0.95rem;
+    max-width: 95vw;
+  }
+
+  .hero-btn {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+  }
+
+  .hero-socials {
+    gap: 1.2rem;
+  }
+
+  .hero-socials a img {
+    width: 1.7rem;
+    height: 1.7rem;
+    padding: 0.18rem;
+  }
+
+  .hero-mouse {
+    margin-top: 2rem;
+  }
+}

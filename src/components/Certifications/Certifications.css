@@ -1,0 +1,152 @@
+.certifications-section {
+  background: var(--color-bg);
+  color: var(--color-text);
+  padding: 5.5rem 1rem 6rem;
+}
+
+.certifications-container {
+  max-width: 1180px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.certifications-carousel {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 1rem;
+}
+
+.certifications-grid {
+  display: flex;
+  gap: 1.3rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 1rem;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.certifications-grid::-webkit-scrollbar {
+  height: 10px;
+}
+
+.certifications-grid::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.certifications-grid::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 999px;
+}
+
+.certifications-grid::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.28);
+}
+
+.certification-card {
+  scroll-snap-align: center;
+  flex: 0 0 46%;
+  min-width: 320px;
+  max-width: 520px;
+  background: var(--color-bg-elevated);
+  border: 1px solid rgba(184, 77, 255, 0.22);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.25);
+  transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+}
+
+.certification-card:hover {
+  transform: translateY(-7px);
+  border-color: rgba(184, 77, 255, 0.42);
+  box-shadow: 0 35px 90px rgba(184, 77, 255, 0.1);
+}
+
+.certification-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  filter: saturate(0.95) brightness(0.9);
+  transition: transform 0.4s ease;
+}
+
+.certification-card:hover img {
+  transform: scale(1.03);
+}
+
+.certification-info {
+  padding: 1.8rem 1.75rem 1.7rem;
+}
+
+.certification-info h3 {
+  margin-bottom: 0.75rem;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.certification-info p {
+  color: #c4c4d1;
+  line-height: 1.8;
+  font-size: 0.95rem;
+}
+
+.certifications-arrow {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(10, 10, 18, 0.88);
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, border-color 0.3s ease, background 0.3s ease;
+  flex-shrink: 0;
+}
+
+.certifications-arrow:hover {
+  transform: scale(1.05);
+  border-color: rgba(255, 255, 255, 0.28);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.certifications-arrow::before {
+  font-size: 1.15rem;
+}
+
+.certifications-arrow--left::before {
+  content: '\2190';
+}
+
+.certifications-arrow--right::before {
+  content: '\2192';
+}
+
+@media (max-width: 980px) {
+  .certification-card {
+    flex: 0 0 60%;
+  }
+}
+
+@media (max-width: 720px) {
+  .certifications-section {
+    padding: 4.5rem 0.75rem 5rem;
+  }
+
+  .certifications-carousel {
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+  }
+
+  .certifications-arrow {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .certification-card {
+    flex: 0 0 88%;
+    min-width: 88%;
+  }
+}

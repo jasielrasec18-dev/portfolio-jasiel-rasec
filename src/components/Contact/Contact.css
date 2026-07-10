@@ -1,0 +1,117 @@
+.contact-section {
+  background: var(--color-bg);
+  color: #fff;
+  padding: 5.5rem 1rem 6rem;
+}
+
+.contact-container {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.contact-description {
+  max-width: 720px;
+  text-align: center;
+  color: var(--color-text-soft);
+  line-height: 1.8;
+  font-size: 0.98rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-methods {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  width: 100%;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.2rem 1.3rem;
+  border: 1px solid var(--border-purple);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.03);
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+  text-decoration: none;
+}
+
+.contact-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(204, 102, 255, 0.55);
+  box-shadow: 0 18px 40px rgba(204, 102, 255, 0.12);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.contact-icon {
+  min-width: 3.5rem;
+  min-height: 3.5rem;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.contact-icon img {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  color: #fff;
+}
+
+.contact-info strong {
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.contact-info span {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+@media (max-width: 900px) {
+  .contact-methods {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 4rem 1rem 5rem;
+  }
+
+  .contact-description {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-section {
+    padding: 3rem 0.75rem 4rem;
+  }
+
+  .contact-card {
+    padding: 1rem 1.1rem;
+  }
+
+  .contact-icon {
+    min-width: 3rem;
+    min-height: 3rem;
+  }
+
+  .contact-icon img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
