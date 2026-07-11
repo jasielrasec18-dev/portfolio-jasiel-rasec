@@ -18,11 +18,6 @@ function About() {
           </div>
 
           <div className="about-text">
-            <p className="intro-text">
-              Transformo ideias em aplicações modernas, escaláveis e com experiências digitais
-              bem construídas.
-            </p>
-
             <p className="main-text">
               Atuo como Desenvolvedor Full Stack com foco em <strong className="highlight-react">React</strong>,{' '}
               <strong className="highlight-nextjs">Next.js</strong>,{' '}

@@ -1,7 +1,7 @@
 :root {
   /* Tipografia */
   --font-display: 'Orbitron', 'Montserrat', 'Arial', sans-serif;
-  --font-principal: 'Space Grotesk', 'Arial', sans-serif;
+  --font-principal: 'Orbitron', 'Space Grotesk', 'Arial', sans-serif;
 
   /* Paleta - tema dev / neon escuro */
   --color-bg: #000000;

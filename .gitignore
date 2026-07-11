@@ -1,6 +1,9 @@
 node_modules
 dist
 dist-ssr
+.agents
+skills-lock.json
+.claude
 *.local
 
 .vscode/*
