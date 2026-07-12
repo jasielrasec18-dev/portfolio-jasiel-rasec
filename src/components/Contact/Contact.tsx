@@ -3,7 +3,7 @@ import { contactMethods } from "../../data/social";
 function Contact() {
   return (
     <section
-      className="bg-black px-4 py-24 text-white sm:px-6 lg:px-8"
+      className="bg-black px-4 py-20 text-white sm:px-6 sm:py-24 lg:px-8"
       id="contato"
     >
       <div className="mx-auto flex max-w-7xl flex-col items-center gap-6">
@@ -16,10 +16,10 @@ function Contact() {
           minhas redes sociais.
         </p>
 
-        <div className="mt-4 grid w-full gap-4 md:grid-cols-2">
+        <div className="mt-4 grid w-full gap-4 sm:grid-cols-2">
           {contactMethods.map((method) => (
             <a
-              className="flex items-center gap-4 rounded-[18px] border border-neonPurple/30 bg-white/[0.03] p-5 text-decoration-none transition-all duration-300 hover:-translate-y-1 hover:border-neonMagenta/55 hover:bg-white/[0.06] hover:shadow-[0_18px_40px_rgba(204,102,255,0.12)]"
+              className="flex items-center gap-4 rounded-[18px] border border-neonPurple/30 bg-white/[0.03] p-4 text-decoration-none transition-all duration-300 hover:-translate-y-1 hover:border-neonMagenta/55 hover:bg-white/[0.06] hover:shadow-[0_18px_40px_rgba(204,102,255,0.12)] sm:p-5"
               href={method.href}
               target={method.href.startsWith("mailto:") ? undefined : "_blank"}
               rel="noopener noreferrer"

@@ -1,36 +1,46 @@
-import { technologies } from '../../data/technologies';
+import { technologies } from "../../data/technologies";
 
 function About() {
   return (
-    <section className="bg-black px-4 py-24 text-white sm:px-6 lg:px-8" id="sobre">
+    <section
+      className="bg-black px-4 py-20 text-white sm:px-6 sm:py-24 lg:px-8"
+      id="sobre"
+    >
       <div className="mx-auto max-w-7xl">
         <h2 className="section-title">
-          <span className="bracket">&lt;</span>Sobre <span className="highlight-mim">Mim</span>
+          <span className="bracket">&lt;</span>Sobre{" "}
+          <span className="highlight-mim">Mim</span>
           <span className="bracket">/&gt;</span>
         </h2>
 
-        <div className="mx-auto mt-16 grid w-full max-w-6xl gap-16 lg:grid-cols-[420px_1fr] lg:items-start">
+        <div className="mx-auto mt-12 grid w-full max-w-6xl gap-10 sm:mt-16 sm:gap-12 lg:grid-cols-[420px_1fr] lg:items-start lg:gap-16">
           <div className="flex justify-center lg:justify-start">
-            <div className="flex h-[280px] w-[280px] items-center justify-center overflow-hidden rounded-full border border-neonPurple/40 bg-[radial-gradient(circle_at_center,_#101017_30%,_#040405_100%)] shadow-[0_0_80px_rgba(204,102,255,0.45)] sm:h-[340px] sm:w-[340px] lg:h-[420px] lg:w-[420px]">
-              <img src="/images/profile.jfif" alt="Jasiel Rasec" className="h-full w-full object-cover" />
+            <div className="flex h-[220px] w-[220px] items-center justify-center overflow-hidden rounded-full border border-neonPurple/40 bg-[radial-gradient(circle_at_center,_#101017_30%,_#040405_100%)] shadow-[0_0_80px_rgba(204,102,255,0.45)] sm:h-[280px] sm:w-[280px] md:h-[320px] md:w-[320px] lg:h-[420px] lg:w-[420px]">
+              <img
+                src="/images/profile.jfif"
+                alt="Jasiel Rasec"
+                className="h-full w-full object-cover"
+              />
             </div>
           </div>
 
           <div className="flex w-full flex-col gap-6">
             <p className="m-0 text-[0.95rem] leading-7 text-zinc-300">
-              Atuo como Desenvolvedor Full Stack com foco em{' '}
-              <strong className="font-bold text-neonCyan">React</strong>,{' '}
-              <strong className="font-bold text-neonPurple">Next.js</strong>,{' '}
-              <strong className="font-bold text-neonMagenta">Node.js</strong> e{' '}
-              <strong className="font-bold text-neonPurple">TypeScript</strong>, desenvolvendo interfaces
-              performáticas, APIs e aplicações responsivas com atenção especial à experiência do
-              usuário, organização de código e qualidade visual.
+              Atuo como Desenvolvedor Full Stack com foco em{" "}
+              <strong className="font-bold text-neonCyan">React</strong>,{" "}
+              <strong className="font-bold text-neonPurple">Next.js</strong>,{" "}
+              <strong className="font-bold text-neonMagenta">Node.js</strong> e{" "}
+              <strong className="font-bold text-neonPurple">TypeScript</strong>,
+              desenvolvendo interfaces performáticas, APIs e aplicações
+              responsivas com atenção especial à experiência do usuário,
+              organização de código e qualidade visual.
             </p>
 
             <p className="m-0 text-[0.95rem] leading-7 text-zinc-300">
-              Estou em constante evolução no universo tech, criando projetos práticos, explorando
-              novas tecnologias e aprimorando minhas habilidades para desenvolver soluções cada
-              vez mais completas e profissionais.
+              Estou em constante evolução no universo tech, criando projetos
+              práticos, explorando novas tecnologias e aprimorando minhas
+              habilidades para desenvolver soluções cada vez mais completas e
+              profissionais.
             </p>
 
             <div className="mt-6 w-full">
@@ -43,8 +53,14 @@ function About() {
                     key={tech.name}
                     className="flex h-[130px] cursor-default flex-col items-center justify-center rounded-2xl border border-neonPurple/30 bg-[rgba(20,20,28,0.9)] px-3 py-5 text-center backdrop-blur-xl transition-all duration-300 hover:-translate-y-2 hover:border-neonPurple hover:bg-[rgba(20,20,28,1)] hover:shadow-[0_0_24px_rgba(204,102,255,0.35)]"
                   >
-                    <img src={tech.icon} alt={tech.name} className="mb-3 h-11 w-11 drop-shadow-[0_0_6px_rgba(204,102,255,0.3)] transition-transform duration-300 hover:scale-110" />
-                    <span className="text-sm font-semibold text-white">{tech.name}</span>
+                    <img
+                      src={tech.icon}
+                      alt={tech.name}
+                      className="mb-3 h-11 w-11 drop-shadow-[0_0_6px_rgba(204,102,255,0.3)] transition-transform duration-300 hover:scale-110"
+                    />
+                    <span className="text-sm font-semibold text-white">
+                      {tech.name}
+                    </span>
                   </div>
                 ))}
               </div>
