@@ -1,4 +1,13 @@
 @import "tailwindcss";
+
+@theme {
+  --color-neonCyan: #00ffea;
+  --color-neonMagenta: #ff2efc;
+  --color-neonPurple: #cc66ff;
+  --font-display: "Orbitron", "Montserrat", "Arial", sans-serif;
+  --font-sans: "Orbitron", "Space Grotesk", "Arial", sans-serif;
+}
+
 @import "./styles/reset.css";
 @import "./styles/variables.css";
 @import "./styles/base.css";
