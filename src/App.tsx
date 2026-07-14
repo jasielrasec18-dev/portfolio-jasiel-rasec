@@ -9,10 +9,10 @@ import ParticleBackground from './components/ParticleBackground/ParticleBackgrou
 
 function App() {
   return (
-    <>
+    <div className="min-h-screen bg-black text-zinc-300">
       <ParticleBackground />
       <Header />
-      <main>
+      <main className="mx-auto w-full max-w-7xl px-4 pt-8 sm:px-6 sm:pt-10 lg:px-8">
         <Hero />
         <About />
         <Projects />
@@ -20,7 +20,7 @@ function App() {
         <Contact />
       </main>
       <Footer />
-    </>
+    </div>
   );
 }
 

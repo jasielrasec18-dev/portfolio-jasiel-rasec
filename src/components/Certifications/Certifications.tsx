@@ -18,9 +18,11 @@ function Certifications() {
   return (
     <section className="bg-black px-4 py-20 text-white sm:px-6 sm:py-24 lg:px-8">
       <div className="mx-auto max-w-7xl">
-        <h2 className="section-title">
-          <span className="bracket">&lt;</span>Certificações
-          <span className="bracket">/&gt;</span>
+        <h2 className="relative mx-auto mb-12 text-center font-display text-2xl font-bold tracking-[0.08em] text-white sm:text-3xl">
+          <span className="text-neonPurple drop-shadow-[0_0_8px_rgba(204,102,255,0.8)]">&lt;</span>
+          Certificações
+          <span className="text-neonPurple drop-shadow-[0_0_8px_rgba(204,102,255,0.8)]">/&gt;</span>
+          <span className="absolute left-1/2 bottom-[-1.1rem] h-[3px] w-20 -translate-x-1/2 rounded-full bg-gradient-to-r from-neonCyan to-neonMagenta" />
         </h2>
 
         <div className="mt-12 grid items-center gap-4 sm:mt-16 lg:grid-cols-[auto_1fr_auto]">

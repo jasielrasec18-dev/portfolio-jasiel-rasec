@@ -7,10 +7,11 @@ function About() {
       id="sobre"
     >
       <div className="mx-auto max-w-7xl">
-        <h2 className="section-title">
-          <span className="bracket">&lt;</span>Sobre{" "}
-          <span className="highlight-mim">Mim</span>
-          <span className="bracket">/&gt;</span>
+        <h2 className="relative mx-auto mb-12 text-center font-display text-2xl font-bold tracking-[0.08em] text-white sm:text-3xl">
+          <span className="text-neonPurple drop-shadow-[0_0_8px_rgba(204,102,255,0.8)]">&lt;</span>
+          Sobre <span className="text-white drop-shadow-[0_0_12px_rgba(255,255,255,0.9)]">Mim</span>
+          <span className="text-neonPurple drop-shadow-[0_0_8px_rgba(204,102,255,0.8)]">/&gt;</span>
+          <span className="absolute left-1/2 bottom-[-1.1rem] h-[3px] w-20 -translate-x-1/2 rounded-full bg-gradient-to-r from-neonCyan to-neonMagenta" />
         </h2>
 
         <div className="mx-auto mt-12 grid w-full max-w-6xl gap-10 sm:mt-16 sm:gap-12 lg:grid-cols-[420px_1fr] lg:items-start lg:gap-16">
