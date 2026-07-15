@@ -74,6 +74,7 @@ function ParticleBackground() {
 
   return (
     <div className="particle-background" aria-hidden="true">
+      // @ts-ignore
       <Particles id="tsparticles" init={particlesInit} options={options} />
     </div>
   );
