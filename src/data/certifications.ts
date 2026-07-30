@@ -20,6 +20,6 @@ export const certifications: Certification[] = [
     title: 'Back-End',
     issuer: 'DevQuest 2.0',
     year: '2026',
-    image: '/images/certifications/backend_certification.png',
+    image: '/images/certifications/backend_certification.jpg',
   },
 ];
