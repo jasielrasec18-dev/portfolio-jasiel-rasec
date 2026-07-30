@@ -1,6 +1,6 @@
 import { type ElementType } from "react";
 import { FaEnvelope, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
-import { contactMethods } from "../../data/social";
+import { contactMethods } from "@/data/social";
 
 const iconMap: Record<string, ElementType> = {
   GitHub: FaGithub,

@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { certifications } from "../../data/certifications";
+import { certifications } from "@/data/certifications";
 
 function Certifications() {
   const trackRef = useRef<HTMLDivElement>(null);
