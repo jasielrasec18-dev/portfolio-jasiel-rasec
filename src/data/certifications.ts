@@ -15,4 +15,11 @@ export const certifications: Certification[] = [
     year: '2026',
     image: '/images/certifications/n8n_certification.png',
   },
+  {
+    id: 'backend',
+    title: 'Back-End',
+    issuer: 'DevQuest 2.0',
+    year: '2026',
+    image: '/images/certifications/backend_certification.png',
+  },
 ];
